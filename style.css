@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Courier New, Helvetica, sans-serif;
+	background: #40E0D0;
+  background: linear-gradient(270deg, #0beab1, #e11a81, #d5d924);
+	background-size: 600% 600%;
+	animation: AnimationName 15s ease infinite;
+	display: none;
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.container {
+	max-width: 600px;
+	margin: 10% auto;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 32px;
+}
+
+.quoteBox {
+	padding: 10px;
+	border: 1px solid #fff;
+	margin-bottom: 10px;
+	height: 200px;
+	text-align: justify;
+	line-height: 25px;
+	position: relative;
+}
+
+blockquote {
+	letter-spacing: 2px;
+	font-size: 18px;
+}
+
+.tweet {
+	position: absolute;
+	bottom: 2px;
+	left: 5px;
+	cursor: pointer;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background: #1DA1F2;
+	transition: all 1s ease;
+}
+
+.tweet a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.tweet:hover {
+	font-size: 1.1em;
+}
+
+.author {
+	text-align: right;
+	float: right;
+}
+
+#button {
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 30px;
+	background: #fff;
+	color: #e11a81;
+	cursor: pointer;
+	transition: 0.4s ease;
+	user-select: none;
+	font-size: 16px;
+}
+
+#button:hover {
+	box-shadow: 0 0 10px #fff;
+	color: #40E0D0;
+}
+
+#button:active {
+	position: relative;
+	top: 2px;
+}
